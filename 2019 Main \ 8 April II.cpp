@@ -28,10 +28,19 @@ int main () {
     for(int i=4322;i<9999;i++){
     	int counter{};
     	int j = i;
-    	while(j!=0){if(j%10<=5){j/=10;counter++;}else {counter=1;break;}}
+    	while(j!=0){
+            if(j%10<=5){
+                j/=10;
+                counter++;
+            }
+            else {
+                counter=1;
+                break;
+            }
+        }
     	if(counter==4){
     		cnt++;
-    		cout << i << endl;
+    		cout << i << endl;//optional to display every possible number//
     	}
 
     }
